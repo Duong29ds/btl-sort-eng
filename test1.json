@@ -1,0 +1,21 @@
+{
+  "ADJ": { "after": ["ADV", "CONJ"], "before": ["NOUN", "CONJ"] },
+  "PRON": {
+    "after": ["VERB", "NOUN", "ADP", "ADV"],
+    "before": ["VERB", "NOUN", "DET"]
+  },
+  "DET": {
+    "after": ["VERB", "PRON", "NOUN", "ADP"],
+    "before": ["NOUN", "ADJ", "PRON"]
+  },
+  "ADP": { "after": ["NOUN", "VERB"], "before": ["NUM"] },
+  "ADV": { "after": ["VERB"], "before": ["VERB", "NOUN"] },
+  "NOUN": { "after": ["VERB", "DET", "PRT"], "before": ["VERB"] },
+  "VERB": { "after": ["PRON", "NOUN", "ADV"], "before": ["ADP"] },
+  "PRT": { "after": ["VERB"], "before": ["NUM", "NOUN"] },
+  "NUM": { "after": ["PRT", "ADP"], "before": ["."] },
+  "CONJ": {
+    "after": ["PRON", "NOUN", "ADJ"],
+    "before": ["PRON", "NOUN", "ADJ"]
+  }
+}
